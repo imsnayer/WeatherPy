@@ -41,17 +41,6 @@ class Weather:
 		CelsiusParse = CelsiusLine[46].split(":")
 		print "It is currently %s in %s, %s" % (CelsiusParse[1], self.city, self.state)
 
-"""
-	def find(self, haystack, needle):
-		results = re.search("(" +needle+ ".*)", haystack)
-		return results.group(1) if results else None
-
-	def ex(self):
-		print self.find('"temp_f"', self.grabPage())
-	
-	
-"""  	
-			
 if __name__ == "__main__":
         ObjW = Weather()
         ObjW.main()
